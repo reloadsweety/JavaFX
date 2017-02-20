@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="application.fxml.LoadMainFxml">
+  <panes>
+    <TitledPane text="LOGIN ">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+    </TitledPane>
+    <TitledPane text="SELECT CONNECTION">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+    </TitledPane>
+    <TitledPane text="QUERY">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+    </TitledPane>
+  </panes>
+</Accordion>
