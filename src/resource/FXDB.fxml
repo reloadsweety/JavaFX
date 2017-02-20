@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<Accordion fx:id="mainAccordion" fx:controller="application.fxml.FXDBMainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<Accordion fx:id="mainAccordion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.FXDBMainController">
   <panes>
-    <TitledPane text="LOGIN " fx:id="loginPange" expanded="true">
+    <TitledPane fx:id="loginPange" expanded="true" text="LOGIN ">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <children>
+                  <Button layoutX="187.0" layoutY="197.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="LOGIN" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="95.0" layoutY="81.1865234375" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME :" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="200.0" layoutY="61.0" prefHeight="27.0" prefWidth="201.0" GridPane.columnIndex="1" />
+                  <Text fill="WHITE" layoutX="95.0" layoutY="146.1865234375" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD :" textAlignment="RIGHT" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="291.0" layoutY="197.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: red;" text="EXIT" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <PasswordField layoutX="200.0" layoutY="126.0" prefHeight="27.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children></AnchorPane>
       </content>
          <font>
             <Font name="System Bold Italic" size="14.0" />
