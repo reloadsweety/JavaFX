@@ -18,5 +18,6 @@ public class FXDBMainController {
 		System.out.println(" ############# Login Controller ############# ");
 		mainAccordion.setExpandedPane(loginPange);
 		loginPange.setExpanded(true);
+		
 	}
 }
